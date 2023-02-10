@@ -1,0 +1,70 @@
+input {
+    --color: #999999;
+    --colorHover: #111111;
+    --backgroundColor: white;
+    --backgroundColorHover: white;
+}
+
+.inputRoot {
+    display: inline-block;
+    padding-bottom: 1.4rem;
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+input {
+    margin: 0;
+    padding: 0.7rem;
+    display: block;
+    color: var(--colorHover);
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid var(--color);
+    font-size: 1rem;
+    transition: all ease-in 200ms;
+}
+
+input[type='search'],
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
+
+input::placeholder {
+    color: gray;
+}
+
+input:focus, input:hover {
+    outline-width: 0;
+    outline: none;
+    border-color: var(--colorHover);
+    background-color: var(--backgroundColorHover);
+}
+
+input[disabled] {
+    color: gray;
+    border-color: lightgray;
+    cursor: default;
+}
+
+.inputError {
+    position: absolute;
+    margin-top: 0.2rem;
+    color: red;
+    font-size: 0.9rem;
+}
+
+.inputRequired {
+    color: red;
+}
+
+.inputLabel {
+    margin-bottom: 0.3rem;
+    display: inline-block;
+    color: var(--color);
+}
+
+.inputLabelDisabled {
+    color: gray;
+}

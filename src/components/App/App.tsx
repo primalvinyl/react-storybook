@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'; 
+import Form from '../Form';
 import './App.css';
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
                 <h1>React Application</h1>
             </header>
             <main>
-                Hello World
+                <Form />
             </main>
         </div>
     );

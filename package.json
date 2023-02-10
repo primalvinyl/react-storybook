@@ -6,16 +6,20 @@
         "start": "webpack-dev-server --open --mode development",
         "build": "webpack --mode production",
         "test": "jest",
+        "test:storybook": "test-storybook",
         "test:coverage": "jest --coverage",
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook"
     },
     "dependencies": {
         "@reduxjs/toolkit": "^1.9.1",
+        "formik": "^2.2.9",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-redux": "^8.0.5",
-        "redux-saga": "^1.2.1"
+        "react-transition-group": "^4.4.5",
+        "redux-saga": "^1.2.1",
+        "yup": "^1.0.0"
     },
     "devDependencies": {
         "@babel/core": "^7.20.12",
@@ -26,12 +30,14 @@
         "@storybook/builder-webpack5": "^6.5.16",
         "@storybook/manager-webpack5": "^6.5.16",
         "@storybook/react": "^6.5.16",
+        "@storybook/test-runner": "^0.9.4",
         "@storybook/testing-library": "^0.0.13",
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^13.4.0",
         "@testing-library/user-event": "^14.4.3",
         "@types/jest": "^29.2.4",
         "@types/react-dom": "^18.0.9",
+        "@types/react-transition-group": "^4.4.5",
         "babel-loader": "^8.3.0",
         "css-loader": "^6.7.2",
         "dotenv": "^16.0.3",
